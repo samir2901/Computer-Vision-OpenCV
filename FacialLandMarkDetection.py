@@ -5,7 +5,7 @@ cap = cv2.VideoCapture(0)
 face_haarcascade = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 landmark_detector = cv2.face.createFacemarkLBF()
 landmark_detector.loadModel("lbfmodel.yaml")
-scale = 2
+scale = 1.6
 
 while True:
     _, frame = cap.read()
